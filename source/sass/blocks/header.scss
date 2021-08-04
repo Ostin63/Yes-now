@@ -1,0 +1,138 @@
+.header {
+  padding: 0 15px 40px;
+  background:
+    url("../img/img-1.png") 50% 10% no-repeat,
+    url("../img/stack.svg#circle-blue") calc(50% + 60px * 2) 100px no-repeat,
+    url("../img/stack.svg#bagel") calc(50% - 50px * 2) 290px no-repeat;
+  background-size: 243px 326px, 23px 23px, 50px 50px;
+}
+
+.header__top {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  align-items: center;
+}
+
+.header__logo {
+  width: 63px;
+  height: 23px;
+}
+
+.header__logo-svg {
+  width: 63px;
+  height: 23px;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: $font-gilroy;
+}
+
+.header__text {
+  display: none;
+}
+
+.header__phone {
+  display: block;
+  text-decoration: none;
+  color: var(--special-black);
+}
+
+.header__order-call {
+  line-height: 1.714;
+  text-decoration: none;
+  color: var(--special-red);
+  border-bottom: $border-red;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    color: var(--red-active);
+    border-bottom: $border-red-active;
+  }
+}
+
+.header__bottom {
+  padding-top: 80px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__bottom-title {
+  margin-top: 200px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  font-family: $font-gilroy;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 64px;
+    height: 7px;
+    top: 390px;
+    left: calc(50% - 64px / 2);
+    background: var(--special-red);
+  }
+}
+
+.header__bottom-title-span {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.header__bottom-text {
+  margin: 30px 0 20px;
+  padding: 0 8px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--black);
+  line-height: 1.286;
+  font-family: $font-gilroy;
+}
+
+.header__bottom-button {
+  width: 100%;
+  max-width: 290px;
+  height: 62px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--special-red);
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: $font-gilroy;
+  color: var(--white);
+  box-shadow: $shadow-red;
+
+  &:hover,
+  &:focus {
+    background: var(--red-hover);
+    box-shadow: $shadow-red-hover;
+  }
+
+  &:active {
+    background: var(--red-active);
+    box-shadow: $shadow-red-active;
+  }
+}

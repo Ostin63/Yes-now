@@ -1,0 +1,23 @@
+$tablet-width: 755px;
+$desktop-width: 1170px;
+
+$font-gilroy: "Gilroy", "Arial", sans-serif;
+
+:root{
+  --white: #ffffff;
+  --black: #000000;
+  --special-red: #f5112c;
+  --special-black: #141414;
+  --red-shadow: rgba(213, 13, 37, 0.55);
+  --red-shadow-hover: rgba(226, 43, 84, 0.55);
+  --red-shadow-active: rgba(205, 43, 84, 0.8);
+  --red-hover: #f63f54;
+  --red-active: #a81023;
+}
+
+$border-red: 2px solid var(--special-red);
+$border-red-active: 2px solid var(--red-active);
+
+$shadow-red: 0 8px 15px 0 var(--red-shadow);
+$shadow-red-hover: 0 8px 15px 0 var(--red-shadow-hover);
+$shadow-red-active: 0 8px 15px 0 var(--red-shadow-active);
